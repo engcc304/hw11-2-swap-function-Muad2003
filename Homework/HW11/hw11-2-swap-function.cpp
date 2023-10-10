@@ -23,3 +23,37 @@
 
 */
 
+#include <stdio.h>
+
+void swap ( int &A_Age  , int &B_Age ) { // การใส่ & ไว้เพื่อแปลงค่าจากฟังก์ชั่นไปหา main โดยตรง
+    int temp = A_Age ;
+    A_Age = B_Age ;
+    B_Age = temp ;
+} // end swap
+int main() {
+    
+    int A_Age , B_Age ;
+    char A_Name[ 100 ] , B_Name[ 100 ] ;
+
+    printf ( "Input A\nName :\n" ) ;
+    scanf ( "%s",&A_Name ) ;
+    printf ( "Age :\n" ) ;
+    scanf ( "%d", &A_Age ) ;
+
+    printf ( "Input B\nName :\n" ) ;
+    scanf ( "%s",&B_Name ) ;
+    printf ( "Age :\n" ) ;
+    scanf ( "%d", &B_Age ) ;
+
+    printf ( "** RESULT **\n" ) ;
+    printf ( "Name: %s (%d)\n", A_Name , A_Age ) ;
+    printf ( "Name: %s (%d)\n", B_Name , B_Age ) ;
+
+    printf ("\n** SWAP AGE **\n" ) ;
+    swap( A_Age , B_Age ) ;
+    printf ( "Name: %s (%d)\n", A_Name , A_Age ) ;
+    printf ( "Name: %s (%d)\n", B_Name , B_Age ) ;
+    
+    
+    return 0 ;
+} // end main
