@@ -48,7 +48,7 @@ int main() {
     printf ( "NAME: %s (%d)\n", A_Name , A_Age ) ;
     printf ( "NAME: %s (%d)\n", B_Name , B_Age ) ;
 
-    printf ("** SWAP AGE **\n" ) ;
+    printf ("\n** SWAP AGE **\n" ) ;
     swap( A_Age , B_Age ) ;
     printf ( "NAME: %s (%d)\n", A_Name , A_Age ) ;
     printf ( "NAME: %s (%d)\n", B_Name , B_Age ) ;
