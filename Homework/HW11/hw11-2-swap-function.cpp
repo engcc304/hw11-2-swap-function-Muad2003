@@ -45,13 +45,14 @@ int main() {
     printf ( "Age :\n" ) ;
     scanf ( "%d", &B_Age ) ;
 
-    printf ( "NAME: %s (%d)\n", A_Name , A_Age ) ;
-    printf ( "NAME: %s (%d)\n", B_Name , B_Age ) ;
+    printf ( "** RESULT **\n" ) ;
+    printf ( "Name: %s (%d)\n", A_Name , A_Age ) ;
+    printf ( "Name: %s (%d)\n", B_Name , B_Age ) ;
 
     printf ("\n** SWAP AGE **\n" ) ;
     swap( A_Age , B_Age ) ;
-    printf ( "NAME: %s (%d)\n", A_Name , A_Age ) ;
-    printf ( "NAME: %s (%d)\n", B_Name , B_Age ) ;
+    printf ( "Name: %s (%d)\n", A_Name , A_Age ) ;
+    printf ( "Name: %s (%d)\n", B_Name , B_Age ) ;
     
     
     return 0 ;
